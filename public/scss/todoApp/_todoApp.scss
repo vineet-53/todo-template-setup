@@ -1,3 +1,20 @@
 @use "../utility/" as *;
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+}
+.todo {
+  width: 600px;
+  height: 100%;
+  font-family: $ff-pop;
+  &__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .display {
+    margin-block-start: 0.5rem;
+  }
 }
